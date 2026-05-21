@@ -11,8 +11,8 @@ A modern, fast, and fully responsive web platform designed for restaurants and b
   *  **Delivery**
   *  **Pickup**
   *  **Dine-in**
-* **Direct-Call Button:** A dedicated, one touch contact feature for instant phone inquiries and manual orders, completely separate from the digital checkout flow.
-* **Custom Drag-to-Scroll Component:** An intuitive `FoodScroll` showcase utilizing mouse-event bindings (`onMouseDown`, `onMouseMove`) for a fluid gallery experience.
+* **Direct Call Button:** A dedicated, one touch contact feature for instant phone inquiries and manual orders, completely separate from the digital checkout flow.
+* **Custom Drag to Scroll Component:** An intuitive `FoodScroll` showcase utilizing mouse-event bindings (`onMouseDown`, `onMouseMove`) for a fluid gallery experience.
 
 ---
 
