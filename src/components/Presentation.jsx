@@ -1,8 +1,8 @@
 import MenuButtons from "./MenuButtons.jsx";
 
-const Presentation = ({ title, description, menu, meniuPhotos, index }) => {
+const Presentation = ({ title, description, menu, photo, index }) => {
   return (
-    <section className="w-full py-16 bg-transparent">
+    <section className="w-full py-16 bg-transparent" id={menu ? "menu" : undefined}>
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="mb-12 text-left">
           {
@@ -19,14 +19,14 @@ const Presentation = ({ title, description, menu, meniuPhotos, index }) => {
         </div>
         {menu === false ? (
           <img
-            src={meniuPhotos[0].img}
-            alt={meniuPhotos[0].name}
+            src={photo[0].img}
+            alt={photo[0].name}
             className="h-128 w-full rounded-[2.5rem]"
           />
         ) : (
           <img
-            src={meniuPhotos[index].img}
-            alt={meniuPhotos[index].name}
+            src={photo[index].img}
+            alt={photo[index].name}
             className="max-w-full h-160 border border-gray-200 rounded-lg shadow-lg w-full select-none"
           />
         )}

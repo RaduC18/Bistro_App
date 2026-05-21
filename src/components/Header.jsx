@@ -1,10 +1,9 @@
 import { Link, Outlet } from "react-router-dom";
 import { useRef } from "react";
-import useHashScroll from "../useHashScroll.js";
+import useScroll from "../useScroll.js";
 import Footer from "./Footer.jsx";
 
 function Header() {
-  useHashScroll("location", "location");
   return (
     <>
       <header >

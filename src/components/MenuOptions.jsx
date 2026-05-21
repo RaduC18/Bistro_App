@@ -1,14 +1,14 @@
-import { CATEGORIES } from "../db/db.js";
-
 import { useState } from "react";
 import startingMenu from "../assets/startingMenu.png";
 import SideBar from "./SideBar";
 import FoodView from "./FoodView";
 import Cart from "./Cart";
 import CartModal from "./CartModal";
-import { INITIAL_PRODUCTS } from "../db/db.js";
+import { INITIAL_PRODUCTS, CATEGORIES } from "../db/db.js";
+import useScroll from "../useScroll.js";
 
 function MenuOptions() {
+  useScroll("cart");
   const [activeCategoryId, setActiveCategoryId] = useState(1);
   const [products, setProducts] = useState(INITIAL_PRODUCTS);
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -62,6 +62,7 @@ function MenuOptions() {
           onIncrease={handleAddToCart}
           onDecrease={handleRemoveFromCart}
           onClear={handleClearCart}
+          open={isCartOpen}
         />
       )}
     </>

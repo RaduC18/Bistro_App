@@ -2,8 +2,10 @@ import { useState } from "react";
 import Presentation from "./Presentation.jsx";
 import MenuButtons from "./MenuButtons.jsx";
 import { MENU } from "../db/db.js";
+import useScroll from "../useScroll.js";
 
 function MenuDisplay() {
+  useScroll("menu");
   const [index, setIndex] = useState(0);
 
   function handleNext() {
@@ -18,7 +20,7 @@ function MenuDisplay() {
     <>
       <Presentation 
         menu={true} 
-        meniuPhotos={MENU} 
+        photo={MENU} 
         index={index} 
       />
       <MenuButtons 

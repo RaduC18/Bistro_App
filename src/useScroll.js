@@ -1,17 +1,19 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-function useHashScroll(parameter) {
+function useScroll(parameter) {
   const { pathname } = useLocation();
 
+  const targetPath = parameter === "home" ? "/" : `/${parameter}`;
+
   useEffect(() => {
-    if (pathname === `/${parameter}`) {
+    if (pathname === targetPath) {
       const element = document.getElementById(`${parameter}`);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
     }
-  }, [pathname]); 
+  }, [pathname, parameter]); 
 }
 
-export default useHashScroll;
+export default useScroll;

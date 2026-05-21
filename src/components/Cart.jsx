@@ -5,10 +5,10 @@ function Cart({ products = [], onOpenCart }) {
   );
 
   return (
-    <div className="flex justify-end text-center pt-20 pb-5 px-6">
+    <div className="flex justify-end text-center pt-20 pb-5 px-6" id="cart">
       <button
         onClick={onOpenCart}
-        className="relative flex items-center gap-2 bg-white  border border-stone-200 px-4 py-1.5 rounded-[0.9rem] shadow-sm hover:bg-stone-50"
+        className="relative flex items-center gap-2 bg-white border border-stone-200 cursor-pointer px-4 py-1.5 rounded-[0.9rem] shadow-sm hover:bg-stone-50"
       >
         {totalItems > 0 && (
           <span className="absolute -top-1.5 -right-1.5 bg-[#29221D] text-[white] text-[11px] font-bold w-5 h-5 flex items-center justify-center rounded-full z-10">

@@ -1,6 +1,5 @@
 function Location() {
   return (
-    // 'flex justify-center' centrează caseta albă pe mijlocul paginii
     <section id="location" className="w-full py-20 px-6 flex justify-center"> 
       
       <div className="bg-white p-8 rounded-[2.5rem] shadow-sm border border-stone-100 max-w-lg w-full text-center">

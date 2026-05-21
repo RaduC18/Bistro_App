@@ -4,10 +4,10 @@ import FoodScroll from "./FoodScroll.jsx";
 
 function Intro() {
   return (
-    <main className="flex flex-col items-center justify-center text-center pt-32 pb-20 px-6">
+    <div className="flex flex-col items-center justify-center text-center pt-32 pb-20 px-6" id="home">
       <About />
       <FoodScroll photos={FOOD} />
-    </main>
+    </div>
   );
 }
 

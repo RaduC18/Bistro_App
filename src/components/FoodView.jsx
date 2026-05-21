@@ -17,7 +17,7 @@ function FoodView({ products, categories, activeCategoryId, onAddToCart }) {
         {filteredProducts.map((product) => (
           <div key={product.id} className="flex flex-col pb-10 border-b border-stone-200 group">
 
-            <div className="w-full aspect-[4/3] rounded-lg overflow-hidden bg-stone-100 mb-4 cursor-pointer shadow-sm">
+            <div className="w-full aspect-[4/3] rounded-lg overflow-hidden bg-stone-100 mb-4 shadow-sm">
               <img 
                 src={product.img} 
                 alt={product.name} 
@@ -25,7 +25,6 @@ function FoodView({ products, categories, activeCategoryId, onAddToCart }) {
               />
             </div>
 
-            {/* Numele și Descrierea */}
             <h4 className="text-[18px] text-[#29221D] mb-1.5 font-normal  decoration-stone-300">
               {product.name}
             </h4>

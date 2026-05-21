@@ -1,11 +1,13 @@
 import { useState, useEffect, useRef } from "react";
 
-function CartModal({ products, onClose, onIncrease, onDecrease, onClear }) {
-  const dialogRef = useRef(null);
+function CartModal({ products, onClose, onIncrease, onDecrease, onClear, open }) {
+  const dialog = useRef();
 
   useEffect(() => {
-    dialogRef.current.showModal();
-  }, []);
+    if(open){
+      dialog.current.showModal();
+    } else dialog.current.close();
+  }, [open]);
 
   const cartItems = products.filter((p) => p.cartQuantity > 0);
 
@@ -22,11 +24,10 @@ function CartModal({ products, onClose, onIncrease, onDecrease, onClear }) {
   return (
 
     <dialog
-      ref={dialogRef}
+      ref={dialog}
       onClose={onClose}
       className="fixed  bg-transparent p-0 m-0 max-w-none max-h-none h-full w-full flex justify-center z-50 backdrop:bg-black/40 open:flex animate-fadeIn"
     >
-      <div className="absolute" onClick={onClose} />
 
       <div className="relative w-full max-w-[550px] h-full bg-[#FCF8F1] shadow-2xl flex flex-col z-10 animate-slideLeft overflow-y-auto p-6">
         <div className="flex justify-between items-center border-b border-stone-200 pb-4 mb-6">

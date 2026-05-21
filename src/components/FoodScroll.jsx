@@ -49,7 +49,7 @@ function FoodScroll({ photos }) {
             <img
               src={item.img}
               alt={item.name}
-              className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+              className="absolute  w-full h-full object-cover pointer-events-none"
             />
             <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/80 p-8">
               <p className="text-white font-bold text-2xl">{item.name}</p>
