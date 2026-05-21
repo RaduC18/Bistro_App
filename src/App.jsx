@@ -2,7 +2,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Home from "./components/Home.jsx";
 import MenuDisplay from "./components/MenuDisplay.jsx";
-import Cart from "./components/Cart.jsx";
 import MenuOptions from "./components/MenuOptions.jsx";
 
 const router = createBrowserRouter([

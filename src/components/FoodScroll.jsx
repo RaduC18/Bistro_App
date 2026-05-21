@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 
 function FoodScroll({ photos }) {
-  const scrollRef = useRef(null);
+  const scrollRef = useRef();
   const [isDown, setIsDown] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
