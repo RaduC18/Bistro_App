@@ -18,9 +18,9 @@ A modern, fast, and fully responsive web platform designed for restaurants and b
 
 ##  Tech Stack
 
-* **Frontend Framework:** React (Functional Components & Hooks)
-* **Build Tool:** Vite (Lightning-fast HMR and bundling)
-* **Styling:** Tailwind CSS (Utility-first CSS framework)
+* **Frontend Framework:** Reac
+* **Build Tool:** Vite
+* **Styling:** Tailwind CSS
 * **Routing:** React Router Dom (`createBrowserRouter` architecture)
 
 ---
