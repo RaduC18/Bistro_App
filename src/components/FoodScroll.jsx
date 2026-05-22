@@ -7,6 +7,7 @@ function FoodScroll({ photos }) {
   const [scrollLeft, setScrollLeft] = useState(0);
 
   function handleMouseDown(e) {
+    e.preventDefault();
     setIsDown(true);
     setStartX(e.pageX - scrollRef.current.offsetLeft);
     setScrollLeft(scrollRef.current.scrollLeft);
@@ -49,7 +50,7 @@ function FoodScroll({ photos }) {
             <img
               src={item.img}
               alt={item.name}
-              className="absolute  w-full h-full object-cover pointer-events-none"
+              className="absolute  w-full h-full object-cover"
             />
             <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/80 p-8">
               <p className="text-white font-bold text-2xl">{item.name}</p>
